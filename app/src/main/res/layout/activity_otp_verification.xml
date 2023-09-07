@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1D1F"
+    tools:context=".otp_verification" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="24dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/poppins"
+        android:text="Check Email Notification!"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="An OTP is on the way!"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Check Email For OTP"
+        android:textColor="#C1BED2"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/otp_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_view"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#070606"
+            android:textSize="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/otp_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_view"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#070606"
+            android:textSize="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/otp_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_view"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#070606"
+            android:textSize="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/otp_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_view"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#070606"
+            android:textSize="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otp_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.0"
+        android:fontFamily="@font/poppins"
+        android:text="Otp matched"
+        android:textColor="#37C298"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/next2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/otp_msg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/next" />
+</RelativeLayout>
